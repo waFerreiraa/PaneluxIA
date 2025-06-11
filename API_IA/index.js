@@ -3,7 +3,8 @@ import receitasRoutes from './src/routes/receitas.js'
 import cors from 'cors'
  
 const app = espress();
-const port = 3001;
+const port = process.env.PORT || 3001;
+
 
 app.use(cors())
 
